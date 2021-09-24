@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Click the button to do a global search for the numbers 1 to 4 in a string.</p>
+<button onclick="fun()" >Click</button>
+<p id="a"></p>
+<script>
+function fun(){
+var str="1234545556516789";
+var pattern=/[1-4]/g;
+var result=str.match(pattern);
+document.getElementById("a").innerHTML=result;
+}
+</script>
+<body onload="fun()";>
+<h1 id="a"></h1>
+</body>
+</html>
+
+
